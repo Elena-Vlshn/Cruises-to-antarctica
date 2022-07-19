@@ -1,0 +1,14 @@
+.body {
+  min-width: 1366px;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+  background-color: $background-color-light;
+  color: $color-text-darck;
+}
