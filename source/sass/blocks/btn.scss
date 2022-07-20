@@ -5,14 +5,14 @@
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $background-color-beige;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &--red {
-    background-color: $color-torch-red;
+    background-color: $color-default-dark-blue;
   }
 
   &:disabled {
