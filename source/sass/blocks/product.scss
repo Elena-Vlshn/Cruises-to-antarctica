@@ -1,18 +1,14 @@
 .product {
-
-}
-
-.product__link {
-
-}
-
-.product__img {
   position: relative;
-}
 
-.product__title {
-  position: absolute;
-	top: 200px;
-	left: 0;
-	width: 100%;
+  img {
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+  }
 }
