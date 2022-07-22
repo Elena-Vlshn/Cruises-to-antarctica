@@ -876,12 +876,25 @@ button,
 }
 
 .intro {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 88px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.intro img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .intro h2 {
@@ -889,11 +902,13 @@ button,
   line-height: 42px;
   font-weight: 600;
   margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .intro p {
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
 }
 
 .features {
@@ -965,7 +980,7 @@ button,
   margin-right: 40px;
 }
 
-.footer__list {
+.footer__navigation-list {
   margin-right: auto;
 }
 
@@ -1054,8 +1069,14 @@ button,
   }
 
   .intro {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     gap: 30px;
+  }
+
+  .intro img {
+    width: 324px;
+    height: 264px;
   }
 
   .intro h2 {
@@ -1068,7 +1089,7 @@ button,
     padding: 100px 0;
   }
 
-  .features h1 {
+  .features h2 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -1086,6 +1107,11 @@ button,
 
   .footer__logo {
     margin-right: 25px;
+  }
+
+  .footer__navigation-item {
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .social__item:not(:last-child) {
@@ -1210,13 +1236,21 @@ button,
   }
 
   .intro {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .intro p {
-    margin-bottom: 40px;
+  .intro img {
+    width: 290px;
+    height: 186px;
+  }
+
+  .intro h2 {
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .features {
@@ -1261,7 +1295,7 @@ button,
     margin-bottom: 30px;
   }
 
-  .footer__list {
+  .footer__navigation-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1269,7 +1303,18 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin-bottom: 30px;
+  }
+
+  .footer__navigation-item {
+    padding: 5px;
+  }
+
+  .footer__navigation-item:not(:last-child) {
+    margin-bottom: 13px;
   }
 
   .logo__svg {
