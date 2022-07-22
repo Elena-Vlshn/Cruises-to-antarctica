@@ -1,14 +1,15 @@
 .product {
-  position: relative;
-
-  img {
+  a {
     position: relative;
-  }
 
-  h2 {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
+    h2 {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+    }
   }
 }

@@ -7,6 +7,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+  const navMain = document.querySelector('.navigation');
+  const navToggle = document.querySelector('.navigation__toggle');
+  const headerNav = document.querySelector('.header__navigation');
+
+  navMain.classList.remove('navigation--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('navigation--closed')) {
+      navToggle.classList.toggle('navigation__toggle--closed');
+      headerNav.classList.toggle('header__navigation--opened');
+      navMain.classList.remove('navigation--closed');
+      navMain.classList.add('navigation--opened');
+    } else {
+      navToggle.classList.toggle('navigation__toggle--closed');
+      headerNav.classList.toggle('header__navigation--opened');
+      navMain.classList.remove('navigation--opened');
+      navMain.classList.add('navigation--closed');
+    }
+  });
 
   iosVhFix();
 

@@ -14,33 +14,123 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <nav class="header__navigation navigation container navigation--closed navigation--nojs">
+          <a class="header__logo logo" href="#">
+            <svg class="logo__svg" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD" role="img" aria-label="Круизы в Антарктику">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+              </svg>
+          </a>
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Преимущества</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Направления</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Ближайшие круизы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__title-wrap">
+          <h1 class="header__title">Круизы в Антарктику</h1>
+          <p class="header__text">Волшебный мир айсбергов и пингвинов</p>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="intro container">
+          <div class="intro__text-wrapper">
+            <h2>Путешествие на край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 768px)" srcset="./img/penguins-mobile@1x.webp 1x, ./img/penguins-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1365px)" srcset="./img/cpenguins-tablet@1x.webp 1x, ./img/penguins-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/penguins-desktop@1x.webp 1x, ./img/penguins-desktop@2x.webp 2x">
+          <!-- 1х: 568px; 2x: 1136px -->
+          <img width="560" height="301" src="./img/penguins-desktop@1x.jpg" srcset="./img/penguins-desktop@2x.jpg 2x" alt="пингвины.">
+          </picture>
+        </section>
+        <section class="features">
+          <h2>Преимущества</h2>
+          <ul>
+            <li>
+              <svg width="27" height="32" viewBox="0 0 27 32" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD"></svg>
+              <h3>Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+            </li>
+            <li>
+              <svg width="38" height="21" viewBox="0 0 38 21" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD"></svg>
+              <h3>Система все включено</h3>
+              <p>Все наши круизы работают
+                по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+            </li>
+            <li>
+              <svg width="42" height="15" viewBox="0 0 42 15" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD"></svg>
+              <h3>Экскурсионные туры на Zodiac</h3>
+              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
+            </li>
+          </ul>
         </section>
         <article class="product">
           <a href="#">
             <picture>
-              <source type="image/webp" srcset="./img/cruise-1-desktop@1x.webp 1x, ./img/cruise-1-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/cruise-1-tablet@1x.webp 1x, ./img/cruise-1-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px)" srcset="./img/cruise-1-mobile@1x.webp 1x, ./img/cruise-1-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="./img/cruise-1-mobile@1x.webp 1x, ./img/cruise-1-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)" srcset="./img/cruise-1-tablet@1x.webp 1x, ./img/cruise-1-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="./img/cruise-1-desktop@1x.webp 1x, ./img/cruise-1-desktop@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img width="260" height="386" src="./img/cruise-1-desktop@1x.jpg" srcset="./img/cruise-1-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
             </picture>
             <h2>Круиз “Астория”</h2>
           </a>
         </article>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <nav class="footer__navigation navigation container">
+          <a class="logo footer__logo" href="#">
+            <svg class="logo__svg" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD" role="img" aria-label="Круизы в Антарктику">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+              </svg>
+          </a>
+          <ul class="footer__list navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Преимущества</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Направления</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Ближайшие круизы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+          <section class="footer__social social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy_ru">
+                  <svg class="social__icon" width="11" height="20" viewBox="0 0 11 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy">
+                  <svg class="social__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#instagram"></use>
+                  </svg>
+                  <span class="visually-hidden">instagram</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com/htmlacademy">
+                  <svg class="social__icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">Twitter</span></a>
+              </li>
+            </ul>
+          </section>
+        </nav>
       </footer>
     </div>
 
@@ -75,5 +165,6 @@
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
+
   </body>
 </html>

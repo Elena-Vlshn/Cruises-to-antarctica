@@ -15,13 +15,20 @@
 @import "global/utils";
 @import "global/container";
 
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/modal";
-
-
+@import "blocks/product.scss";
+@import "blocks/navigation.scss";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/features.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/logo.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

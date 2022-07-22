@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  @include vp-1023 {
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+}
