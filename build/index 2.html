@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Круизы в Антарктику</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/montserratregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratlightbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <picture>
+          <source type="image/webp" media="(max-width: 768px)" srcset="./img/banner-mobile@1x.webp 1x, ./img/banner-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="./img/banner-tablet@1x.webp 1x, ./img/banner-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1024px)" srcset="./img/banner-desktop@1x.webp 1x, ./img/banner-desktop@2x.webp 2x">
+        <!-- 1х: 1366px; 2x: 2732px -->
+        <img width="1366" height="650" src="./img/banner-desktop@1x.jpg" srcset="./img/banner-desktop@2x.jpg 2x" alt="пингвины.">
+        </picture>
+        <nav class="header__navigation navigation container navigation--closed navigation--nojs">
+          <a class="header__logo logo" href="#">
+            <svg class="logo__svg" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD" role="img" aria-label="Круизы в Антарктику">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+              </svg>
+          </a>
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Преимущества</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Направления</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Ближайшие круизы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__title-wrap">
+          <h1 class="header__title">Круизы в Антарктику</h1>
+          <p class="header__text">Волшебный мир айсбергов и пингвинов</p>
+        </div>
+      </header>
+      <main>
+        <section class="intro container">
+          <div class="intro__text-wrapper">
+            <h2>Путешествие на край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+          </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 768px)" srcset="./img/penguins-mobile@1x.webp 1x, ./img/penguins-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="./img/penguins-tablet@1x.webp 1x, ./img/penguins-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/penguins-desktop@1x.webp 1x, ./img/penguins-desktop@2x.webp 2x">
+          <!-- 1х: 568px; 2x: 1136px -->
+          <img width="560" height="301" src="./img/penguins-desktop@1x.jpg" srcset="./img/penguins-desktop@2x.jpg 2x" alt="пингвины.">
+          </picture>
+        </section>
+        <section class="features">
+          <h2>Преимущества</h2>
+          <ul>
+            <li>
+              <svg width="27" height="32" viewBox="0 0 27 32" fill="none" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite_auto.svg#ship"></use>
+            </svg>
+              <h3>Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+            </li>
+            <li>
+              <svg width="38" height="21" viewBox="0 0 38 21" fill="none" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite_auto.svg#double-check"></use>
+              </svg>
+              <h3>Система все включено</h3>
+              <p>Все наши круизы работают
+                по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+            </li>
+            <li>
+              <svg width="42" height="15" viewBox="0 0 42 15" fill="none" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite_auto.svg#boat"></use>
+              </svg>
+              <h3>Экскурсионные туры на Zodiac</h3>
+              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog container">
+          <h2 class="cataloog__title">Ближайшие круизы</h2>
+          <ul>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-1-mobile@1x.webp 1x, ./img/cruise-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-1-tablet@1x.webp 1x, ./img/cruise-1-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-1-desktop@1x.webp 1x, ./img/cruise-1-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-1-desktop@1x.jpg" srcset="./img/cruise-1-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Астория”</h2>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="product-description">
+                  <h3>Круиз “Элайн”</h3>
+                  <dl>
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+
+                    <dt>Порт отправления</dt>
+                    <dd>Буэнос-Айрес</dd>
+
+                    <dt>Продолжительность</dt>
+                    <dd>20 дней</dd>
+
+                    <dt>Цена</dt>
+                    <dd>от 14500 $</dd>
+                </dl>
+                </a>
+                <a href="#">Забронировать</a>
+              </article>
+            </li>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-2-mobile@1x.webp 1x, ./img/cruise-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-2-tablet@1x.webp 1x, ./img/cruise-2-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-2-desktop@1x.webp 1x, ./img/cruise-2-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-2-desktop@1x.jpg" srcset="./img/cruise-2-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Атлантис”</h2>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-3-mobile@1x.webp 1x, ./img/cruise-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-3-tablet@1x.webp 1x, ./img/cruise-3-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-3-desktop@1x.webp 1x, ./img/cruise-3-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-3-desktop@1x.jpg" srcset="./img/cruise-3-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Одиссей”</h2>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-4-mobile@1x.webp 1x, ./img/cruise-4-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-4-tablet@1x.webp 1x, ./img/cruise-4-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-4-desktop@1x.webp 1x, ./img/cruise-4-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-4-desktop@1x.jpg" srcset="./img/cruise-4-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Олимпия”</h2>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-5-mobile@1x.webp 1x, ./img/cruise-5-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-5-tablet@1x.webp 1x, ./img/cruise-5-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-5-desktop@1x.webp 1x, ./img/cruise-5-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-5-desktop@1x.jpg" srcset="./img/cruise-5-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Аврора”</h2>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-6-mobile@1x.webp 1x, ./img/cruise-6-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-6-tablet@1x.webp 1x, ./img/cruise-6-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-6-desktop@1x.webp 1x, ./img/cruise-6-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-6-desktop@1x.jpg" srcset="./img/cruise-6-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Леонор”</h2>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="product">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/cruise-7-mobile@1x.webp 1x, ./img/cruise-7-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/cruise-7-tablet@1x.webp 1x, ./img/cruise-7-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/cruise-7-desktop@1x.webp 1x, ./img/cruise-7-desktop@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img width="260" height="386" src="./img/cruise-7-desktop@1x.jpg" srcset="./img/cruise-7-desktop@2x.jpg 2x" alt="пейзаж антарктики.">
+                  </picture>
+                  <h2>Круиз “Минион - 1”</h2>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section class="promo">
+          <picture>
+           <source type="image/webp" media="(max-width: 767px)" srcset="./img/promo-background-mobile@1x.webp 1x, ./img/promo-background-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="./img/promo-background-tablet@1x.webp 1x, ./img/promo-background-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/promo-background-desktop@1x.webp 1x, ./img/promo-background-desktop@2x.webp 2x">
+          <!-- 1х: 1366px; 2x: 2732px -->
+          <img width="1366" height="555" src="./img/promo-background-desktop@1x.jpg" srcset="./img/promo-background-desktop@2x.jpg 2x" alt="пингвины.">
+          </picture>
+          <div class="promo__wrapper">
+            <div class="promo__title-wrap">
+              <h3 class="promo__title">Раннее бронирование</h3>
+              <p class="promo__text">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+            </div>
+            <form class="promo__form form" action="#" method="post">
+              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <ul>
+                  <li>
+                    <label class="visually-hidden" for="name">имя</label>
+                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                  </li>
+                  <li>
+                    <label class="visually-hidden" for="phone">номер телефона</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  </li>
+                  <li>
+                    <label class="visually-hidden" for="email">адрес электронной почты</label>
+                    <input type="email" name="e-mail" id="email" placeholder="Email" required>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="agree" id="agree" checked>
+                    <label for="agree">
+                      <span></span>
+                      Я согласен на обработку моих персональных данных</label>
+                  </li>
+              </ul>
+              <button type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts container">
+          <h2 class="visually-hidden">Как с нами связаться</h2>
+          <div class="contacts__map-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/map-desktop@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/map-desctop@1x.webp 1x, ./img/map-desctop@2x.webp 2x">
+              <img width="560" height="306" src="img/map-desctop@1x.jpg"
+                srcset="img/map-desctop@2x.jpg 2x" alt="карта.">
+            </picture>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056448!2d30.320853351339935!3d59.93871916896567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sca!4v1658767499105!5m2!1sru!2sca"
+              width="560" height="306" title="г. Санкт Петербург, ул. Большая Конюшенная, 19/8" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite_auto.svg#pin"></use>
+            </svg>
+          </div>
+
+          <address class="contacts__address">
+            <p class="contacts__text">У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+            <p class="contacts__line">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#pin"></use>
+              </svg>
+              <span class="contacts__street">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</span>
+            </p>
+            <p class="contacts__line">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#phone"></use>
+              </svg>
+              <a class="contacts__phone" href="tel:+88002000000">8-800-200-00-00</a>
+            </p>
+          </address>
+        </section>
+
+      </main>
+      <footer class="footer">
+        <nav class="footer__navigation navigation container">
+          <a class="logo footer__logo" href="#">
+            <svg class="logo__svg" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD" role="img" aria-label="Круизы в Антарктику">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+              </svg>
+          </a>
+          <ul class="footer__navigation-list navigation__list">
+            <li class="footer__navigation-item navigation__item"><a class="navigation__link" href="#">Преимущества</a></li>
+            <li class="footer__navigation-item navigation__item"><a class="navigation__link" href="#">Направления</a></li>
+            <li class="footer__navigation-item navigation__item"><a class="navigation__link" href="#">Ближайшие круизы</a></li>
+            <li class="footer__navigation-item navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+          <section class="footer__social social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy_ru">
+                  <svg class="social__icon" width="11" height="20" viewBox="0 0 11 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy">
+                  <svg class="social__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#instagram"></use>
+                  </svg>
+                  <span class="visually-hidden">instagram</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com/htmlacademy">
+                  <svg class="social__icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">Twitter</span></a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
