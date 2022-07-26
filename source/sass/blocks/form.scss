@@ -1,34 +1,33 @@
 .form {
   min-width: 403px;
   width: 30%;
-  // width: 403px;
-  padding: 50px;
+  padding: 42px 50px 46px;
   background-color: $color-default-dark-blue;
   color: $color-default-white;
 
   p {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 
   li {
     display: flex;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
   }
 
   input {
     background-color: $color-default-white;
-    padding: 11px 16px;
+    padding: 10px 16px;
     width: 100%;
     border: none;
     font: inherit;
@@ -80,7 +79,7 @@
     font-size: 14px;
     font-weight: 600;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     background-color: $color-default-white;
     color: $color-default-dark-blue;
     justify-content: center;
@@ -110,5 +109,4 @@
       height: 20px;
     }
   }
-
 }

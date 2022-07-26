@@ -1,55 +1,76 @@
 .catalog {
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 120px;
 
-  h2 {
-    font-size: 28px;
-    line-height: 42px;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 49px;
-    text-align: center;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0 15px;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);
-    // grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 386px;
-    gap: 30px;
-    justify-content: center;
-  }
-
   @include vp-1023 {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
-
-    h2 {
-      font-size: 26px;
-      line-height: 39px;
-      margin-bottom: 60px;
-    }
-
-    ul {
-      grid-template-columns: repeat(2, 309px);
-    }
   }
 
   @include vp-767 {
     padding-top: 65px;
     padding-bottom: 65px;
-
-    h2 {
-      font-size: 24px;
-      line-height: 36px;
-      margin-bottom: 40px;
-    }
-
-    ul {
-      grid-template-columns: 270px;
-    }
   }
+}
+
+.catalog__title {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 49px;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 53px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0 15px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 260px);
+  // grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 386px;
+  gap: 30px;
+  justify-content: center;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(auto-fit, 309px);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 270px;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.catalog__item-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.catalog__item:hover .catalog__item-description {
+  display: block;
+  z-index: 2;
 }

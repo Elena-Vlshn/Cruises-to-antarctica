@@ -3,6 +3,7 @@
 }
 
 .social__list {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,5 +24,11 @@
     &:not(:last-child) {
       margin-right: 23px;
     }
+  }
+}
+
+.social__icon {
+  @include vp-1023 {
+    width: 16px;
   }
 }
