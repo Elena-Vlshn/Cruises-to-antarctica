@@ -41,6 +41,19 @@ body {
 a {
   color: $color-default-white;
   text-decoration: none;
+
+  &:focus {
+    outline: 2px solid $color-focus-outline;
+  }
+
+  &:focus,
+  &:hover {
+    color: $background-color-focus;
+
+    svg {
+      fill: $background-color-focus;
+    }
+  }
 }
 
 img,

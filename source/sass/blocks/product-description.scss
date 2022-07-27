@@ -51,6 +51,12 @@
     background-color: $color-default-white;
     color: $color-default-dark-blue;
     justify-content: center;
+    user-select: none;
+
+    &:focus,
+    &:hover {
+      background-color: $background-color-focus;
+    }
   }
 
   @include vp-1023 {

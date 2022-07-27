@@ -3,7 +3,7 @@
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 46px 35px auto;
+  grid-template-rows: 46px auto auto;
 
   svg {
     width: 33px;
@@ -14,6 +14,7 @@
     margin: 0;
     font-size: 18px;
     font-weight: 500;
+    padding-bottom: 20px;
   }
 
   p {
@@ -33,6 +34,11 @@
   }
 
   @include vp-767 {
-    padding: 25px 15px 25px 20px;
+    padding: 25px 15px 22px 20px;
+
+    svg {
+      width: 21px;
+      height: 26px;
+    }
   }
 }

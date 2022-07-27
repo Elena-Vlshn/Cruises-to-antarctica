@@ -16,7 +16,15 @@
       grid-template-columns: 1fr 13px;
       grid-template-rows: 55px auto;
       align-items: start;
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
 
+      a {
+        margin-right: auto;
+      }
 
       svg {
         fill: $color-default-dark-blue;
@@ -25,6 +33,8 @@
       .navigation__list {
         flex-direction: column;
         align-items: flex-start;
+        grid-column: 1/3;
+        grid-row: 2/3;
       }
 
       .navigation__item {
@@ -40,12 +50,6 @@
         line-height: 22px;
         padding: 9px 20px;
         display: block;
-      }
-    }
-
-    &--nojs {
-      & .navigation__toggle {
-        display: none;
       }
     }
   }

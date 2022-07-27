@@ -42,6 +42,11 @@
     &:hover {
       background-color: $background-color-focus;
     }
+
+    &:focus,
+    &:active {
+      outline: 2px solid $color-focus-outline;
+    }
   }
 
   input[type="checkbox"] {
@@ -58,6 +63,12 @@
     padding-left: 23px;
     font-size: 10px;
     line-height: 13px;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: $background-color-focus;
+    }
   }
 
   input[type="checkbox"] + label span {
@@ -66,12 +77,24 @@
     background-color: $color-default-white;
     width: 18px;
     height: 18px;
+
+    &:focus,
+    &:hover {
+      background-color: $background-color-focus;
+    }
   }
 
-  input[type="checkbox"]:checked + label::before {
+  input[type="checkbox"]:checked + label span::before {
+    content: " ";
     background-image: url("../../img/svg/check.svg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
   }
 
   button {
@@ -85,6 +108,17 @@
     justify-content: center;
     border: none;
     width: 100%;
+    user-select: none;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: $background-color-focus;
+    }
+
+    &:focus {
+      outline: 2px solid $color-focus-outline;
+    }
   }
 
   @include vp-1023 {
@@ -92,12 +126,14 @@
   }
 
   @include vp-767 {
-    padding: 40px 30px;
+    padding: 32px 30px 36px;
     min-width: 290px;
-    max-width: 52%;
+    max-width: 100%;
+    width: 100%;
 
     p {
       text-align: center;
+      margin-bottom: 24px;
     }
 
     input[type="checkbox"] + label {
@@ -107,6 +143,10 @@
     input[type="checkbox"] + label span {
       width: 20px;
       height: 20px;
+    }
+
+    ul {
+      margin-bottom: 24px;
     }
   }
 }

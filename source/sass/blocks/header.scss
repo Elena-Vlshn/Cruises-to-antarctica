@@ -1,7 +1,6 @@
 .header {
   position: relative;
   color: $color-default-white;
-  padding: 35px 103px;
   min-height: 650px;
 
   img {
@@ -17,16 +16,44 @@
   }
 
   @include vp-1023 {
-    padding: 30px 45px;
     min-height: 638px;
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+
+    &--nojs {
+      & .header__navigation {
+        position: static;
+        width: 100%;
+        min-height: min-content;
+      }
+
+      & .header__button {
+        display: none;
+      }
+
+      img {
+        position: static;
+      }
+
+      & .header__title-wrap {
+        top: 500px;
+      }
+    }
   }
 }
 
 .header__navigation {
-  margin-bottom: 210px;
+  padding: 35px 103px 0;
+  width: 100%;
 
   @include vp-1023 {
-    margin-bottom: 200px;
+    padding: 30px 45px;
+  }
+
+  @include vp-767 {
+    padding: 20px 15px;
   }
 }
 
@@ -41,7 +68,7 @@
   }
 
   @include vp-767 {
-    top: 185px;
+    top: 175px;
     left: 15px;
   }
 }
@@ -62,7 +89,7 @@
   @include vp-767 {
     font-size: 36px;
     line-height: 46px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 
@@ -80,4 +107,3 @@
     font-size: 16px;
   }
 }
-

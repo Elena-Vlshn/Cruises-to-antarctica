@@ -9,23 +9,45 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   const navMain = document.querySelector('.navigation');
   const navToggle = document.querySelector('.navigation__toggle');
-  const headerNav = document.querySelector('.header__navigation');
+  const header = document.querySelector('.header');
+  const navLink = navMain.querySelectorAll('.navigation__link');
+  const body = document.querySelector('.body');
 
-  navMain.classList.remove('navigation--nojs');
+  navMain.classList.remove('navigation--opened');
+  navMain.classList.add('navigation--closed');
+  header.classList.remove('header--nojs');
+
+  const outsideEvtListener = (event) => {
+    const target = event.target;
+    if (!target.closest('.navigation') && !target.closest('.navigation__toggle')) {
+      navMain.classList.remove('navigation--opened');
+      navMain.classList.add('navigation--closed');
+      navToggle.classList.toggle('navigation__toggle--closed');
+    }
+  };
+
 
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('navigation--closed')) {
       navToggle.classList.toggle('navigation__toggle--closed');
-      headerNav.classList.toggle('header__navigation--opened');
       navMain.classList.remove('navigation--closed');
       navMain.classList.add('navigation--opened');
+      body.classList.add('scroll-lock');
+      document.addEventListener('click', outsideEvtListener);
     } else {
       navToggle.classList.toggle('navigation__toggle--closed');
-      headerNav.classList.toggle('header__navigation--opened');
       navMain.classList.remove('navigation--opened');
       navMain.classList.add('navigation--closed');
+      document.removeEventListener(outsideEvtListener);
     }
   });
+
+  navLink.forEach((link) => link.addEventListener('click', function () {
+    navToggle.classList.toggle('navigation__toggle--closed');
+    navMain.classList.remove('navigation--opened');
+    navMain.classList.add('navigation--closed');
+    body.classList.remove('scroll-lock');
+  }));
 
   iosVhFix();
 

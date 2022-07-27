@@ -5,25 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Круизы в Антарктику</title>
+    <title>Круизы в&nbsp;Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/montserratregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserratbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserratlightbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
-      <header class="header">
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="./img/banner-mobile@1x.webp 1x, ./img/banner-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="./img/banner-tablet@1x.webp 1x, ./img/banner-tablet@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 1024px)" srcset="./img/banner-desktop@1x.webp 1x, ./img/banner-desktop@2x.webp 2x">
-        <!-- 1х: 1366px; 2x: 2732px -->
-        <img width="1366" height="650" src="./img/banner-desktop@1x.jpg" srcset="./img/banner-desktop@2x.jpg 2x" alt="пингвины.">
-        </picture>
-        <nav class="header__navigation navigation navigation--closed navigation--nojs">
-          <a class="header__logo logo" href="#">
+      <header class="header header--nojs">
+        <nav class="header__navigation navigation  navigation--opened">
+          <a class="logo" href="#">
             <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg" fill="#F9FBFD" role="img" aria-label="Круизы в Антарктику">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
@@ -31,7 +24,7 @@
             </svg>
 
           </a>
-          <button class="navigation__toggle" type="button">
+          <button class="header__button navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
@@ -41,26 +34,32 @@
             <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="./img/banner-mobile@1x.webp 1x, ./img/banner-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="./img/banner-tablet@1x.webp 1x, ./img/banner-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1024px)" srcset="./img/banner-desktop@1x.webp 1x, ./img/banner-desktop@2x.webp 2x">
+        <!-- 1х: 1366px; 2x: 2732px -->
+        <img width="1366" height="650" src="./img/banner-desktop@1x.jpg" srcset="./img/banner-desktop@2x.jpg 2x" alt="пейзаж Антарктики.">
+        </picture>
         <div class="header__title-wrap">
-          <h1 class="header__title">Круизы в Антарктику</h1>
+          <h1 class="header__title">Круизы в&nbsp;Антарктику</h1>
           <p class="header__text">Волшебный мир айсбергов и пингвинов</p>
         </div>
       </header>
       <main>
         <section class="intro container" id="intro">
           <div class="intro__text-wrapper">
-            <h2>Путешествие на край Земли</h2>
-            <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+            <h2 class="intro__title">Путешествие на край Земли</h2>
+            <p class="intro__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
-          <div class="intro__img-wrapper">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="./img/penguins-mobile@1x.webp 1x, ./img/penguins-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="./img/penguins-tablet@1x.webp 1x, ./img/penguins-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 1024px)" srcset="./img/penguins-desktop@1x.webp 1x, ./img/penguins-desktop@2x.webp 2x">
-            <!-- 1х: 560px; 2x: 1120px -->
-            <img width="560" height="301" src="./img/penguins-desktop@1x.jpg" srcset="./img/penguins-desktop@2x.jpg 2x" alt="пингвины.">
-            </picture>
-          </div>
+
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/penguins-mobile@1x.webp 1x, ./img/penguins-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="./img/penguins-tablet@1x.webp 1x, ./img/penguins-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/penguins-desktop@1x.webp 1x, ./img/penguins-desktop@2x.webp 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <img width="560" height="301" src="./img/penguins-desktop@1x.jpg" srcset="./img/penguins-desktop@2x.jpg 2x" alt="пингвины.">
+          </picture>
         </section>
         <section class="features" id="features">
           <picture>
@@ -68,11 +67,11 @@
              <source type="image/webp" media="(max-width: 1023px)" srcset="./img/features-background-tablet@1x.webp 1x, ./img/features-background-tablet@2x.webp 2x">
              <source type="image/webp" media="(min-width: 1024px)" srcset="./img/features-background-desktop@1x.webp 1x, ./img/features-background-desktop@2x.webp 2x">
             <!-- 1х: 1366px; 2x: 2732px -->
-            <img width="1366" height="562" src="./img/features-background-desktop@1x.jpg" srcset="./img/features-background-desktop@2x.jpg 2x" alt="пингвины.">
+            <img width="1366" height="562" src="./img/features-background-desktop@1x.jpg" srcset="./img/features-background-desktop@2x.jpg 2x" alt="пейзаж Антарктики.">
            </picture>
-          <h2>Преимущества</h2>
-          <ul>
-            <li>
+          <h2 class="features__title">Преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item">
               <article class="features-card">
                   <svg width="27" height="32" viewBox="0 0 27 32" fill="none" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg">
@@ -82,18 +81,18 @@
                   <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </article>
             </li>
-            <li>
+            <li class="features__item">
               <article class="features-card">
                 <svg width="38" height="21" viewBox="0 0 38 21" fill="none" aria-hidden="true" focusable="false"
                 xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite_auto.svg#double-check"></use>
                 </svg>
-                <h3>Система все включено</h3>
+                <h3>Система все&nbsp;включено</h3>
                 <p>Все наши круизы работают
                   по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
               </article>
               </li>
-            <li>
+            <li class="features__item">
               <article class="features-card">
                 <svg width="42" height="15" viewBox="0 0 42 15" fill="none" aria-hidden="true" focusable="false"
                 xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +135,6 @@
                   <dt>Цена</dt>
                   <dd>от 11500 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -168,7 +166,6 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                 </dl>
-                </a>
                 <a href="#">Забронировать</a>
               </article>
             </li>
@@ -200,7 +197,6 @@
                   <dt>Цена</dt>
                   <dd>от 14500 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -232,7 +228,6 @@
                   <dt>Цена</dt>
                   <dd>от 9700 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -264,7 +259,6 @@
                   <dt>Цена</dt>
                   <dd>от 18600 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -296,7 +290,6 @@
                   <dt>Цена</dt>
                   <dd>от 11700 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -328,7 +321,6 @@
                   <dt>Цена</dt>
                   <dd>от 12500 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -360,7 +352,6 @@
                   <dt>Цена</dt>
                   <dd>от 12300 $</dd>
               </dl>
-              </a>
               <a href="#">Забронировать</a>
               </article>
             </li>
@@ -372,7 +363,7 @@
             <source type="image/webp" media="(max-width: 1023px)" srcset="./img/promo-background-tablet@1x.webp 1x, ./img/promo-background-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 1024px)" srcset="./img/promo-background-desktop@1x.webp 1x, ./img/promo-background-desktop@2x.webp 2x">
           <!-- 1х: 1366px; 2x: 2732px -->
-          <img width="1366" height="555" src="./img/promo-background-desktop@1x.jpg" srcset="./img/promo-background-desktop@2x.jpg 2x" alt="пингвины.">
+          <img width="1366" height="555" src="./img/promo-background-desktop@1x.jpg" srcset="./img/promo-background-desktop@2x.jpg 2x" alt="пейзаж Антарктики.">
           </picture>
           <div class="promo__wrapper">
             <div class="promo__title-wrap">
@@ -462,24 +453,24 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="https://www.facebook.com/htmlacademy_ru">
-                  <svg class="social__icon" width="11" height="20" viewBox="0 0 11 20" fill="none"
+                <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy_ru">
+                  <svg width="11" height="20" viewBox="0 0 11 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <use href="img/sprite_auto.svg#facebook"></use>
                   </svg>
                   <span class="visually-hidden">Facebook</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="https://www.instagram.com/htmlacademy">
-                  <svg class="social__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">
+                  <svg width="20" height="20" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <use href="img/sprite_auto.svg#instagram"></use>
                   </svg>
                   <span class="visually-hidden">instagram</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="https://twitter.com/htmlacademy">
-                  <svg class="social__icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                <a class="social__link social__link_twitter" href="https://twitter.com/htmlacademy">
+                  <svg width="20" height="16" viewBox="0 0 20 16"
                     xmlns="http://www.w3.org/2000/svg">
                     <use href="img/sprite_auto.svg#twitter"></use>
                   </svg>
@@ -489,35 +480,6 @@
           </section>
         </nav>
       </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>

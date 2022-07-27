@@ -11,10 +11,6 @@
   padding: 0;
 }
 
-.social__link {
-  display: flex;
-}
-
 .social__item {
   &:not(:last-child) {
     margin-right: 28px;
@@ -27,8 +23,37 @@
   }
 }
 
-.social__icon {
+.social__link {
+  display: flex;
+
+  svg {
+    fill: $color-default-white;
+  }
+
+  &:focus,
+  &:hover {
+    color: $background-color-focus;
+
+    svg {
+      fill: $background-color-focus;
+    }
+  }
+
   @include vp-1023 {
-    width: 16px;
+    &_facebook svg {
+      width: 9px;
+      height: 16px;
+    }
+
+    &_instagram svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &_twitter svg {
+      width: 16px;
+      height: 13px;
+    }
   }
 }
+
