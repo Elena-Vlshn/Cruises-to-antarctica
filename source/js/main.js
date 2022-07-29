@@ -17,15 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
   navMain.classList.add('navigation--closed');
   header.classList.remove('header--nojs');
 
-  const outsideEvtListener = (event) => {
+  function outsideEvtListener(event) {
     const target = event.target;
     if (!target.closest('.navigation') && !target.closest('.navigation__toggle')) {
       navMain.classList.remove('navigation--opened');
       navMain.classList.add('navigation--closed');
       navToggle.classList.toggle('navigation__toggle--closed');
+      document.removeEventListener('click', outsideEvtListener);
     }
-  };
-
+  }
 
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('navigation--closed')) {
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
       navToggle.classList.toggle('navigation__toggle--closed');
       navMain.classList.remove('navigation--opened');
       navMain.classList.add('navigation--closed');
-      document.removeEventListener(outsideEvtListener);
+      document.removeEventListener('click', outsideEvtListener);
     }
   });
 
@@ -47,6 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
     navMain.classList.remove('navigation--opened');
     navMain.classList.add('navigation--closed');
     body.classList.remove('scroll-lock');
+    document.removeEventListener('click', outsideEvtListener);
   }));
 
   iosVhFix();
