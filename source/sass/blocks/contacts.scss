@@ -108,12 +108,21 @@
 }
 
 .contacts__phone {
+  display: flex;
   color: $color-default-dark-blue;
-  margin-left: 10px;
+  align-items: center;
+
+  svg {
+    fill: $color-default-dark-blue;
+    margin-right: 10px;
+  }
 
   &:hover {
     background-color: none;
     color: $color-focus-outline;
+
+    svg {
+      fill: $color-focus-outline;
+    }
   }
 }
-

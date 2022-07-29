@@ -1,10 +1,13 @@
 .features {
-  padding: 110px 103px 120px;
+  padding-top: 110px;
+  padding-bottom: 116px;
+  // padding: 110px 103px 116px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   position: relative;
+  background-color: $background-image-color;
 
   img {
     object-fit: cover;
@@ -15,16 +18,27 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
   }
 
   @include vp-1023 {
-    padding: 90px 45px 96px;
+    // padding: 90px 45px 96px;
+    padding-top: 90px;
+    padding-bottom: 96px;
   }
 
   @include vp-767 {
-    padding: 58px 15px 66px;
+    // padding: 58px 15px 66px;
+    padding-top: 58px;
+    padding-bottom: 66px;
   }
+}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 .features__title {
@@ -32,7 +46,7 @@
   line-height: 42px;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 
   @include vp-1023 {
     font-size: 26px;
@@ -60,7 +74,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 26px;
   }
 }
 

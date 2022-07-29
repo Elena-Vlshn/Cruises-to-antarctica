@@ -1,6 +1,6 @@
 .form {
-  min-width: 403px;
-  width: 30%;
+  width: 403px;
+  flex-shrink: 0;
   padding: 42px 50px 46px;
   background-color: $color-default-dark-blue;
   color: $color-default-white;
@@ -121,14 +121,9 @@
     }
   }
 
-  @include vp-1023 {
-    max-width: 52%;
-  }
-
   @include vp-767 {
     padding: 32px 30px 36px;
     min-width: 290px;
-    max-width: 100%;
     width: 100%;
 
     p {

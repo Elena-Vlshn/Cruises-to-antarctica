@@ -7,12 +7,6 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
   }
 
   @include vp-1023 {
@@ -45,31 +39,28 @@
 }
 
 .header__navigation {
-  padding: 35px 103px 0;
-  width: 100%;
+  padding-top: 35px;
 
   @include vp-1023 {
-    padding: 30px 45px;
+    padding-top: 30px;
   }
 
   @include vp-767 {
-    padding: 20px 15px;
+    padding-top: 20px;
   }
 }
 
 .header__title-wrap {
-  position: absolute;
-  top: 272px;
-  left: 198px;
+  padding-top: 200px;
+  padding-left: 95px;
 
   @include vp-1023 {
-    top: 268px;
-    left: 48px;
+    padding-top: 216px;
+    padding-left: 0;
   }
 
   @include vp-767 {
-    top: 175px;
-    left: 15px;
+    padding-top: 134px;
   }
 }
 
@@ -106,4 +97,14 @@
   @include vp-767 {
     font-size: 16px;
   }
+}
+
+.header__img-wrap {
+  background-color: $color-default-dark-blue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }

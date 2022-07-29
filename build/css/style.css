@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserratregular.woff2") format("woff2"), url("../../fonts/montserratregular.woff") format("woff");
+  src: url("../fonts/montserratregular.woff2") format("woff2"), url("../fonts/montserratregular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserratlightbold.woff2") format("woff2"), url("../../fonts/montserratlightbold.woff") format("woff");
+  src: url("../fonts/montserratlightbold.woff2") format("woff2"), url("../fonts/montserratlightbold.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 600;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserratsemibold.woff2") format("woff2"), url("../../fonts/montserratsemibold.woff") format("woff");
+  src: url("../fonts/montserratsemibold.woff2") format("woff2"), url("../fonts/montserratsemibold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserratbold.woff2") format("woff2"), url("../../fonts/montserratbold.woff") format("woff");
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff");
 }
 
 *,
@@ -648,9 +648,22 @@ button,
 }
 
 .container {
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
-  padding: 0 103px;
+  max-width: 1160px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .product a {
@@ -658,6 +671,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .product h2 {
@@ -671,10 +685,9 @@ button,
 
 .product img {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  display: block;
 }
 
 .navigation {
@@ -731,23 +744,15 @@ button,
   object-fit: cover;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
 }
 
 .header__navigation {
-  padding: 35px 103px 0;
-  width: 100%;
+  padding-top: 35px;
 }
 
 .header__title-wrap {
-  position: absolute;
-  top: 272px;
-  left: 198px;
+  padding-top: 200px;
+  padding-left: 95px;
 }
 
 .header__title {
@@ -764,8 +769,18 @@ button,
   line-height: 24px;
 }
 
+.header__img-wrap {
+  background-color: #011c40;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .intro {
-  padding-top: 110px;
+  padding-top: 120px;
   padding-bottom: 120px;
   display: -ms-grid;
   display: grid;
@@ -800,7 +815,8 @@ button,
 }
 
 .features {
-  padding: 110px 103px 120px;
+  padding-top: 110px;
+  padding-bottom: 116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,6 +829,7 @@ button,
   align-items: center;
   margin: 0 auto;
   position: relative;
+  background-color: #c1dcff;
 }
 
 .features img {
@@ -825,7 +842,23 @@ button,
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+}
+
+.features__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .features__title {
@@ -833,7 +866,7 @@ button,
   line-height: 42px;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 }
 
 .features__list {
@@ -920,6 +953,7 @@ button,
 .logo svg {
   width: 70px;
   height: 38px;
+  fill: #f9fbfd;
 }
 
 .catalog {
@@ -938,7 +972,7 @@ button,
 
 .catalog__list {
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -971,7 +1005,6 @@ button,
 }
 
 .catalog__item:hover .catalog__item-description {
-  display: block;
   z-index: 2;
 }
 
@@ -1021,7 +1054,7 @@ button,
 }
 
 .product-description dd:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .product-description a {
@@ -1041,6 +1074,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: auto;
 }
 
 .product-description a:focus,
@@ -1060,9 +1094,12 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  padding: 50px 163px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #c1dcff;
 }
 
 .promo img {
@@ -1078,6 +1115,8 @@ button,
 }
 
 .promo__wrapper {
+  width: 76%;
+  max-width: 1040px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,8 +1150,9 @@ button,
 }
 
 .form {
-  min-width: 403px;
-  width: 30%;
+  width: 403px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 42px 50px 46px;
   background-color: #011c40;
   color: #f9fbfd;
@@ -1374,13 +1414,27 @@ button,
 }
 
 .contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #011c40;
-  margin-left: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__phone svg {
+  fill: #011c40;
+  margin-right: 10px;
 }
 
 .contacts__phone:hover {
   background-color: none;
   color: #91c5eb;
+}
+
+.contacts__phone:hover svg {
+  fill: #91c5eb;
 }
 
 .features-card {
@@ -1403,7 +1457,7 @@ button,
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .features-card p {
@@ -1421,12 +1475,22 @@ button,
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 45px;
+    width: 88%;
   }
 
   .product h2 {
     bottom: 30px;
     left: 35px;
+  }
+
+  .product a {
+    padding-top: 125%;
+  }
+
+  .product img {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .navigation__item {
@@ -1443,12 +1507,12 @@ button,
   }
 
   .header__navigation {
-    padding: 30px 45px;
+    padding-top: 30px;
   }
 
   .header__title-wrap {
-    top: 268px;
-    left: 48px;
+    padding-top: 216px;
+    padding-left: 0;
   }
 
   .header__title {
@@ -1479,7 +1543,8 @@ button,
   }
 
   .features {
-    padding: 90px 45px 96px;
+    padding-top: 90px;
+    padding-bottom: 96px;
   }
 
   .features__title {
@@ -1552,10 +1617,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
   }
 
   .promo__title-wrap {
-    max-width: 420px;
+    width: 420px;
     margin-bottom: 54px;
     text-align: center;
     margin-right: 0;
@@ -1570,10 +1636,6 @@ button,
   .promo__text {
     font-size: 18px;
     margin: auto;
-  }
-
-  .form {
-    max-width: 52%;
   }
 
   .contacts {
@@ -1600,8 +1662,8 @@ button,
 
   .features-card {
     padding: 24px 16px 25px 20px;
-    -ms-grid-rows: 42px 60px auto;
-    grid-template-rows: 42px 60px auto;
+    -ms-grid-rows: 46px 60px auto;
+    grid-template-rows: 46px 60px auto;
   }
 
   .features-card svg {
@@ -1612,12 +1674,17 @@ button,
 
 @media (max-width: 767px) {
   .container {
+    width: 100%;
     padding: 0 15px;
   }
 
   .product h2 {
     bottom: 20px;
     left: 24px;
+  }
+
+  .product a {
+    padding-top: 143%;
   }
 
   .navigation--closed .navigation__list {
@@ -1641,7 +1708,7 @@ button,
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 4;
   }
 
   .navigation--opened a {
@@ -1726,12 +1793,11 @@ button,
   }
 
   .header__navigation {
-    padding: 20px 15px;
+    padding-top: 20px;
   }
 
   .header__title-wrap {
-    top: 175px;
-    left: 15px;
+    padding-top: 134px;
   }
 
   .header__title {
@@ -1759,7 +1825,8 @@ button,
   }
 
   .features {
-    padding: 58px 15px 66px;
+    padding-top: 58px;
+    padding-bottom: 66px;
   }
 
   .features__title {
@@ -1771,7 +1838,7 @@ button,
   .features__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 26px;
   }
 
   .footer {
@@ -1824,7 +1891,7 @@ button,
   }
 
   .catalog {
-    padding-top: 60px;
+    padding-top: 56px;
     padding-bottom: 65px;
   }
 
@@ -1839,12 +1906,16 @@ button,
     grid-template-columns: 270px;
   }
 
+  .product-description {
+    padding: 35px 25px;
+  }
+
   .promo {
     padding: 58px 15px 65px;
   }
 
   .promo__title-wrap {
-    max-width: 350px;
+    max-width: 75%;
     margin-bottom: 34px;
   }
 
@@ -1857,13 +1928,11 @@ button,
   .promo__text {
     font-size: 16px;
     line-height: 22px;
-    max-width: 240px;
   }
 
   .form {
     padding: 32px 30px 36px;
     min-width: 290px;
-    max-width: 100%;
     width: 100%;
   }
 
@@ -1906,5 +1975,9 @@ button,
   .features-card svg {
     width: 21px;
     height: 26px;
+  }
+
+  .features-card h3 {
+    max-width: 210px;
   }
 }

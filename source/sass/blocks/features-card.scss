@@ -14,7 +14,7 @@
     margin: 0;
     font-size: 18px;
     font-weight: 500;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   p {
@@ -25,7 +25,7 @@
 
   @include vp-1023 {
     padding: 24px 16px 25px 20px;
-    grid-template-rows: 42px 60px auto;
+    grid-template-rows: 46px 60px auto;
 
     svg {
       width: 21px;
@@ -39,6 +39,10 @@
     svg {
       width: 21px;
       height: 26px;
+    }
+
+    h3 {
+      max-width: 210px;
     }
   }
 }

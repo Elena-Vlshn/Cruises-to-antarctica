@@ -3,8 +3,10 @@
   flex-direction: column;
   position: relative;
   justify-content: center;
-  align-self: center;
-  padding: 50px 163px;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $background-image-color;
 
   img {
     object-fit: cover;
@@ -27,6 +29,8 @@
 }
 
 .promo__wrapper {
+  width: 76%;
+  max-width: 1040px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +39,7 @@
 
   @include vp-1023 {
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -44,14 +49,14 @@
 
 
   @include vp-1023 {
-    max-width: 420px;
+    width: 420px;
     margin-bottom: 54px;
     text-align: center;
     margin-right: 0;
   }
 
   @include vp-767 {
-    max-width: 350px;
+    max-width: 75%;
     margin-bottom: 34px;
   }
 }
@@ -90,7 +95,5 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
-    max-width: 240px;
   }
 }
-
