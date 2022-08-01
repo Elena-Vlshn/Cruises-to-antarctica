@@ -694,9 +694,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -712,9 +709,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -723,6 +717,7 @@ button,
   font-size: 16px;
   font-weight: 500;
   line-height: 19.5px;
+  margin-bottom: 5px;
 }
 
 .navigation__item:not(:last-child) {
@@ -748,6 +743,11 @@ button,
 
 .header__navigation {
   padding-top: 35px;
+}
+
+.header__navigation-list {
+  margin-left: auto;
+  max-width: 80%;
 }
 
 .header__title-wrap {
@@ -1770,6 +1770,10 @@ button,
 
   .header {
     min-height: 500px;
+  }
+
+  .header .header__button {
+    margin-left: auto;
   }
 
   .header--nojs .header__navigation {

@@ -16,6 +16,10 @@
   @include vp-767 {
     min-height: 500px;
 
+    & .header__button {
+      margin-left: auto;
+    }
+
     &--nojs {
       & .header__navigation {
         position: static;
@@ -48,6 +52,11 @@
   @include vp-767 {
     padding-top: 20px;
   }
+}
+
+.header__navigation-list {
+  margin-left: auto;
+  max-width: 80%;
 }
 
 .header__title-wrap {
