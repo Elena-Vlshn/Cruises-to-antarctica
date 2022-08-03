@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 44px;
-  align-items: center;
+  align-items: start;
 
   img {
     display: block;
@@ -53,4 +53,8 @@
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+}
+
+.intro__text-wrapper {
+  align-self: center;
 }

@@ -1,7 +1,6 @@
 .features {
   padding-top: 110px;
   padding-bottom: 116px;
-  // padding: 110px 103px 116px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +20,11 @@
   }
 
   @include vp-1023 {
-    // padding: 90px 45px 96px;
-    padding-top: 90px;
-    padding-bottom: 96px;
+    padding-top: 92px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
-    // padding: 58px 15px 66px;
     padding-top: 58px;
     padding-bottom: 66px;
   }
@@ -51,6 +48,7 @@
   @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 48px;
   }
 
   @include vp-767 {
@@ -74,7 +72,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    row-gap: 26px;
+    row-gap: 28px;
   }
 }
 

@@ -5,13 +5,15 @@
 .social__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .social__item {
+  margin-bottom: 5px;
+
   &:not(:last-child) {
     margin-right: 28px;
   }

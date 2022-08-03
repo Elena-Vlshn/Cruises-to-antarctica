@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header');
   const navLink = navMain.querySelectorAll('.navigation__link');
   const body = document.querySelector('.body');
+  const phone = document.querySelector('input[type="tel"]');
 
   navMain.classList.remove('navigation--opened');
   navMain.classList.add('navigation--closed');
@@ -38,6 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
       navToggle.classList.toggle('navigation__toggle--closed');
       navMain.classList.remove('navigation--opened');
       navMain.classList.add('navigation--closed');
+      body.classList.remove('scroll-lock');
       document.removeEventListener('click', outsideEvtListener);
     }
   });
@@ -50,7 +52,22 @@ window.addEventListener('DOMContentLoaded', () => {
     document.removeEventListener('click', outsideEvtListener);
   }));
 
+  function keyPressedCheck(event) {
+    let value = event.target.value.slice(-1);
+    const regex = /[0-9]/;
+
+    if (!regex.test(value)) {
+      event.target.value = event.target.value.replace(/[^\d]/g, '');
+      return;
+    }
+    event.target.value.concat(value);
+    return;
+  }
+
+  phone.addEventListener('input', keyPressedCheck);
+
   iosVhFix();
+
 
   // Modules
   // ---------------------------------
