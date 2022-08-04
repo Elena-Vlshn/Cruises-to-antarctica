@@ -918,7 +918,7 @@ button,
   padding-top: 8px;
   padding-left: 10px;
   min-width: 15%;
-  max-width: 15%;
+  max-width: 18%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
@@ -1049,7 +1049,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow-y: auto;
+  overflow: auto;
   background-color: #011c40;
   padding: 30px 25px 32px;
   width: 100%;

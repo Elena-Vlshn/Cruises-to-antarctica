@@ -1,7 +1,7 @@
 .product-description {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  overflow: auto;
 
   background-color: $color-default-dark-blue;
   padding: 30px 25px 32px;
