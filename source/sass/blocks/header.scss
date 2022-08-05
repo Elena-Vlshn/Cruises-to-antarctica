@@ -58,6 +58,14 @@
 
 .header__logo {
   align-self: start;
+
+  &:hover {
+    color: $color-default-white;
+
+    svg {
+      fill: $color-default-white;
+    }
+  }
 }
 
 .header__navigation-list {

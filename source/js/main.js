@@ -19,11 +19,13 @@ window.addEventListener('DOMContentLoaded', () => {
   header.classList.remove('header--nojs');
 
   function outsideEvtListener(event) {
+
     const target = event.target;
-    if (!target.closest('.navigation') && !target.closest('.navigation__toggle')) {
+    if (target.classList.contains('navigation__overly')) {
       navMain.classList.remove('navigation--opened');
       navMain.classList.add('navigation--closed');
       navToggle.classList.toggle('navigation__toggle--closed');
+      body.classList.remove('scroll-lock');
       document.removeEventListener('click', outsideEvtListener);
     }
   }

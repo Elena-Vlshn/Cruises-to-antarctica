@@ -13,14 +13,28 @@
 
 .social__item {
   margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
 
   &:not(:last-child) {
     margin-right: 28px;
   }
 
   @include vp-1023 {
+    width: 16px;
+    height: 16px;
+
     &:not(:last-child) {
-      margin-right: 23px;
+      margin-right: 20px;
+    }
+  }
+
+  @include vp-767 {
+    &:not(:last-child) {
+      margin-right: 18px;
     }
   }
 }
