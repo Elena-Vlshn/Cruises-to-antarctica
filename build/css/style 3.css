@@ -1978,7 +1978,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   .footer__navigation-item {
@@ -2091,7 +2091,6 @@ button,
 
   .contacts__text {
     padding-top: 0;
-    margin-bottom: 28px;
   }
 
   .features-card {
